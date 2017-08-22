@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrentRuff</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-fixed-top container-fluid">
+      <div class="navbar-header">
+      <span class="navbar-brand dog">BrentRuff</span>
+      </div>
+      <div class="navbar-collapse" id="myNavBar"> <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">List of Rescues</a></li>
+        <li><a href="#">Save a Dog</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+ <main class="container-fluid bg1 text-center">  
+   <div id="floatingText">Welcome to BrentRuff - A Dog Social Media Website</div>
+  </main>
+  <div class="container-fluid bg2 grayBg">
+  <div class="jumbotron text-center" id="info">
+    <h1>Why <span class="dog">BrentRuff</span>?</h1>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-4">   
+
+        <p>A social media webite, just for dogs at Brentwood.</p>
+          <img  src="orangedog.jpeg" class="img-responsive">
+        </div>
+        <div class="col-sm-4">
+        <p>Rate, connect, and share with other dog lovers </p>
+          <img src="happydog.jpeg" class="img-responsive">
+          
+        </div>
+        <div class="col-sm-4">   
+        <p>Work with the community to help dogs in need!
+        </p>
+          <img src="adopteddog.jpeg" class="img-responsive">
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    <div class= "container-fluid bg2 text-center" id="signup" ng-app="">
+      <h2>Sign up today {{firstName + " " + lastName}}!</h2>
+      <h3>Join the community to share your favorite pups or save homeless dogs!</h3>
+      <form>
+        <table><tr><td><p>First name:</p><input type="text" ng-model="firstName"></td> <td>
+          <p>Last name:</p><input type="text" ng-model="lastName"></td></tr>
+          <tr><td><p>Email:</p><input type="text" value="Your email"></td> <td><p>Password</p><input type="text" value="Password"></td></tr>
+        </table>
+        <p>How did you hear about us?</p>
+        <input class="wideText" type="text" value="How did you hear about us?">
+      </form>
+      <a href="" class="btn btn-default btn-lg"><span class="	glyphicon glyphicon-heart-empty"></span> Create Account
+      </a>
+
+    </div>
+  
+  <div class="container-fluid bg3"></div>
+  <footer class="container-fluid text-center">Created by Katherine Wang as a sample website for the Marks family</footer>
+  </body>
+</html>

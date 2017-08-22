@@ -1,0 +1,111 @@
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+background-color: #171819;
+  color: white;
+}
+
+.navbar{
+  margin: 0;
+  background-color: #171819;
+  opacity: 0.8;
+}
+
+.navbar-brand{
+  font-size: 200%;
+}
+
+.bg1{
+  height: 60%;
+  background-attachment: fixed;
+  background-image: url("dog.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg2{
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.grayBg{
+  background-color: lightgray;
+  color: black;
+}
+
+.bg3{
+  padding: 10%;
+}
+
+.dog{
+  font-family: 'Chewy', cursive;
+}
+.jumbotron{
+ background-color: lightgrey;
+}
+
+.col-sm-4{
+  padding: 10px;
+}
+form{
+  padding-top: 5%;
+}
+
+
+@keyframes welcomeScreen{
+  0%{
+    visibility: visible;
+    opacity: 0;
+  }
+  
+  25%{
+    opacity: 0.3;
+
+  }
+  
+  85%{
+   opacity: 1; 
+  }
+  
+  100%{
+    opacity: 0;
+  }
+}
+
+#floatingText{
+  visibility: hidden;
+  animation-name: welcomeScreen;
+  animation-duration: 5s;
+  position: relative;
+  top: 40%;
+color: white;
+  font-size: 300%;
+}
+
+form,
+table,
+#signup,
+tr,
+td{
+  margin: auto;
+}
+
+input[type="text"]{
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: gray;
+  text-align: center;
+}
+
+.wideText{
+  width: 450px;
+}
+
+
